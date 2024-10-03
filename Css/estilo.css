@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background: #271440;
+    background-repeat: no-repeat;
+    font-family: 'Roboto';
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+}
+.links, a, h1{
+    margin-right:10px ;
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+}
+h1{
+    font-size: 34px;
+}
+.cor-cabecalho{
+    background: #00ff15;
+}
+a:hover{
+    color: #271440;
+    background: white;
+    border-radius: 5px;
+}
+
+.direita{
+    float: right;
+    background: rgb(34, 7, 47);
+    width: 40%;
+    height: 450px;
+    margin: 30px;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.esquerda{
+    float: left;
+    margin: 30px
+}
+
+.cadastro{
+    margin: 10px;
+    font-family: 'Josefin Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+form{
+    text-align: center;
+}
+label{
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #00ff15;
+}
+input{
+    width: 80%;
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+}
+button{
+    font-size: 20px;
+    border-radius: 10px;
+    color: #271440;
+    cursor: pointer;
+    background: #00ff15;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin: 2px;
+}
+.vermelho:hover{
+    transition: 1ms;
+    color: white;
+}
+.verde:hover{
+    transition: 1ms;
+    color: white;
+}
+
+.rodape{
+    background: #00ff15;
+    margin-top: 700px;
+    text-align: center;
+    padding: 90px;
+    color: white;
+    box-shadow: 0px 40px 100px white;
+}
+@media screen and (max-width: 1005px) {
+    .esquerda, .direita{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .esquerda{
+        margin-left: 20px;
+    }
+
+    .direita{
+        margin-top: 20px;
+        padding: 20px;
+    }
+    
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    .rodape{
+        padding: 200px;
+    }
+    
+
+}
